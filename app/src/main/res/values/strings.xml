@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exam Browser</string>
+    <string name="admob_app_id"></string>
+    <string name="interstital_ad_id"></string>
+</resources>
