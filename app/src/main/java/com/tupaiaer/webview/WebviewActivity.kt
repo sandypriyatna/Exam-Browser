@@ -36,7 +36,7 @@ class WebviewActivity : AppCompatActivity() {
         web_view!!.webViewClient = object : WebViewClient() {
 
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
-                Log.v("OnPageOverride", url.toString())
+                Toast.makeText(applicationContext, url.toString(), Toast.LENGTH_SHORT).show()
                 if (url!!.startsWith("https") || url.startsWith("http")) {
                     return false
                 } else {
